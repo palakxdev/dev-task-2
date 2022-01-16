@@ -201,8 +201,8 @@ input::placeholder {
         display: inline;
         text-align: center;
     }
-    .header-img{
-        width: 55%;
+    .img{
+        width: 50%;
     }
     .section-title{
         text-align: center;
@@ -216,13 +216,6 @@ input::placeholder {
         width: 50%;
         position: relative;
     }
-    .footer{
-        width: 50%;
-    }
-    .footer-container{
-        width: 50%;
-        margin: auto;
-    }
     
 }
 
@@ -235,8 +228,8 @@ input::placeholder {
         display: inline;
         text-align: center;
     }
-    .header-img{
-        width: 80%;
+    .img{
+        width: 70%;
     }
     .collections{
         display: grid;
