@@ -5,6 +5,7 @@ body{
     width: 1200px;
     margin: auto;
     font-family: 'Poppins', sans-serif;
+    background-color: aliceblue;
 }
 h1{
     font-size: 52px;
@@ -33,6 +34,10 @@ h1{
     padding: 10px 30px;
     border-radius: 30px;
     background-color: #E02C6D;
+    transition: all 0.3s ease;
+}
+.button:hover{
+    padding: 15px;
 }
 .button-text{
     margin-right: 10px;
@@ -96,6 +101,7 @@ h1{
     justify-content: flex-end;
     font-weight: bold;
     padding: 15px;
+    margin-right: 55px;
     color: #E02C6D;
 }
 .more-arrow{
@@ -104,4 +110,149 @@ h1{
 /*------------------------------
     end second container style
 -------------------------------*/
+.form-body{
+    margin-top: 30px;
+    margin-left: 30%;
+}
+.formGroup{
+    width: 100%;
+    position: relative;
+}
+.formGroup input {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-style: 2px solid #E02C6D;
+    padding-left: 30px;
+}
+.formGroup i {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    color: grey;
+    font-size: smaller;
+    margin: 10px !important;
+}
+input::placeholder {
+    position: relative;
+    left: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+.btn{
+    width: 20%;
+    padding: 15px;
+    background-color: #E02C6D;
+    margin-top: 15px;
+    color: lavender;
+    border-radius: 30px;
+    border-style: none;
+    margin-bottom: 50px;
+}
+.btn-signup{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+.btn:hover, .btn2:hover, .icon:hover{
+    background-color: rgba(247, 15, 170, 0.781);
+    color: whitesmoke;
+}
+/*------------------------------
+    end form container style
+-------------------------------*/
+.footer{
+    background-color: #0A0826;
+    width: 100%;
+    padding: 40px 0;
+}
+.footer-container{
+    width: 1080px;
+    margin: auto;
+}
+.footer-title{
+    text-align: center;
+    color: #ffffff;
+    font-weight: normal;
+}
+.footer-text{
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 50px;
+}
+.social-icon{
+    text-align: center;
+}
+.social{
+    font-size: 22px;
+    color:#ffffff;
+    padding: 8px;
+}
+/*------------------------------
+    start media query style
+-------------------------------*/
 
+/*---for mobile deveces---*/
+
+@media only screen and (max-width:688px) {
+    .logo{
+        text-align: center;
+    }
+    .head-container{
+        display: inline;
+        text-align: center;
+    }
+    .header-img{
+        width: 55%;
+    }
+    .section-title{
+        text-align: center;
+    }
+    .collections{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+    .formGroup{
+        width: 50%;
+        position: relative;
+    }
+    .footer{
+        width: 50%;
+    }
+    .footer-container{
+        width: 50%;
+        margin: auto;
+    }
+    
+}
+
+/*---for tablet deveces---*/
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    .logo{
+        text-align: center;
+    }
+    .head-container{
+        display: inline;
+        text-align: center;
+    }
+    .header-img{
+        width: 80%;
+    }
+    .collections{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+    .formGroup{
+        width: 100%;
+    }
+    .footer{
+        text-align: center;
+        width: 100%;
+    }
+    .footer-container{
+        width: 80%;
+        margin: auto;
+    }
+    
+}
